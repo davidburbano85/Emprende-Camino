@@ -17,10 +17,22 @@ import { ContactosComponent } from '../contactos/contactos.component';
     imports: [HeaderComponent, ContenidoComponent, SlidebarComponent, WidgetComponent, Widget2Component, PieComponent, TrabajaComponent, PedidosComponent, ContactosComponent]
 })
 export class InicioComponent {
-    recibirTrue=false
+    //creamos las variables que despues tomaran el valor de los hijos
+    recibirTrue=false//esta es de trabaja
+    pedido=false
+    contacto=false
+    //creamos los metodos para recibir la info del hijo header
+    //y le damos ese valor a las variables creadas arriba
    recibirCambio(recibidoHeader:boolean){
     this.recibirTrue=recibidoHeader
     console.log('Valor de enviarTue recibido:', recibidoHeader)
    }
+   recibePedido(pedidoRecibido:boolean){
+    this.pedido=pedidoRecibido
+   }
+   recibeContacto(contactoRecibido:boolean){
+    this.contacto=contactoRecibido
+   }
+
     
 }
