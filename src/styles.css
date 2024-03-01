@@ -1,1 +1,119 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    color: RGB(18, 32, 62);
+    background-color: antiquewhite;
+}
+.contenedor {   
+    width: 100%;
+    max-width: 100%;   
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+    /* Ajusta la altura de las filas en toda la página */
+    grid-template-areas:
+        "header    header  header"
+        "header    header  header"
+
+        "contenido contenido slidebar"
+        "contenido contenido slidebar"
+
+        "wid1      wid2      slidebar"
+        "wid1      wid2      slidebar"
+        "wid1      wid2      slidebar"
+
+        "pie       pie       pie";
+}
+
+.contenedor>div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .slidebar,
+.contenedor .pie {
+    padding: 0px;
+    border: solid  rgb(51, 153, 255);
+
+    border-radius: 10px;
+}
+
+.contenedor .header {
+   
+    color: #fff;
+
+    grid-area: header;
+}
+
+.contenedor .contenido {
+    grid-area: contenido;
+    opacity: 0.9;
+    font-size: larger;
+}
+
+.contenedor .slidebar {
+    grid-column: 3/4;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    grid-area: slidebar;
+}
+
+.contenedor .wid1,
+.contenedor .wid2 {    
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .wid1 {
+    grid-area: wid1;
+}
+
+.contenedor .wid2 {
+    grid-area: wid2;
+}
+
+.contenedor .pie {
+     background: #12203E;    
+    grid-area: pie;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1424px) {
+    .contenedor {        
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, auto);
+        /* Ajusta la altura de las filas en toda la página */
+        grid-template-areas: 
+            "header    header  header"
+            "contenido contenido slidebar"
+            "contenido contenido slidebar"
+            "wid1      wid2      slidebar"
+            "wid1      wid2      slidebar"
+            "wid1      wid2      slidebar"
+            "pie       pie       pie";
+    }
+}
+
+/* Media query solo para ajustar la altura en pantallas más pequeñas */
+@media screen and (min-width: 320px) and (max-width: 769px){
+    .contenedor {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, auto);
+        /* Ajusta la altura de las filas en toda la página */
+        grid-template-areas:
+            "header     "
+            "contenido  "
+            "slidebar     "
+            "slidebar     "
+            "wid1            "
+            "wid2            "
+            "pie           ";
+    }
+}

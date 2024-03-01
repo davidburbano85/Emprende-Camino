@@ -1,0 +1,35 @@
+<div class="relleno">
+    <div class="contenedor">
+        <header class="header">
+            <!-- <app-header /> -->
+            <app-header (enviarTrabajo)="recibirCambio($event)"></app-header>
+           
+
+        </header>
+        <div class="contenido">
+
+                @if (recibirTrue) {                    
+                    <app-trabaja/>
+                }@else {
+                    <app-contenido/>
+                }
+            
+
+
+
+
+        </div>
+        <div class="slidebar">
+            <app-slidebar />
+        </div>
+        <div class="wid1">
+            <app-widget />
+        </div>
+        <div class="wid2">
+            <app-widget2 />
+        </div>
+        <footer class="pie">
+            <app-pie />
+        </footer>
+    </div>
+</div>

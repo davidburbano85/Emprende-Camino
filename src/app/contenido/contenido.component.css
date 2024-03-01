@@ -1,0 +1,26 @@
+.cont {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    background-image: url("C:/Users/ASUS/Documents/a EmprendeCamino/emprendimiento/src/assets/manos.jpg") ;
+    opacity: 0.8;
+}
+
+.der,
+.izq {
+    
+    width: 50%;
+    border: solid rgb(51, 153, 255);
+    border-radius: 10px;
+    margin: 5px;
+    background-color: transparent;
+    color: black;
+
+}
+h1{
+    background-color: transparent;
+}
+span{
+    background-color: transparent;
+
+}
