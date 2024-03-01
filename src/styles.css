@@ -18,14 +18,11 @@
     grid-template-areas:
         "header    header  header"
         "header    header  header"
-
         "contenido contenido slidebar"
         "contenido contenido slidebar"
-
-        "wid1      wid2      slidebar"
-        "wid1      wid2      slidebar"
-        "wid1      wid2      slidebar"
-
+        "widgets   widgets      slidebar"
+        "widgets   widgets      slidebar"
+        "widgets   widgets      slidebar"
         "pie       pie       pie";
 }
 
@@ -51,21 +48,24 @@
     grid-area: contenido;
     opacity: 0.9;
     font-size: larger;
+    box-shadow: 0 0 10px rgb(51, 153, 255), 0 0 20px rgb(51, 153, 255), 0 0 30px rgb(51, 153, 255);
+
 }
 
 .contenedor .slidebar {
+    
     grid-column: 3/4;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100px;
+    min-height: 400px;
     grid-area: slidebar;
 }
 
 .contenedor .wid1,
-.contenedor .wid2 {    
-    height: 100px;
+.contenedor .wid2 {  
+    width: 100%;  
     text-align: center;
     display: flex;
     align-items: center;
@@ -74,15 +74,28 @@
 
 .contenedor .wid1 {
     grid-area: wid1;
+    border: solid rgb(51, 153, 255) 1px;
+    border-radius: 10px;
+    height: 50%;
+
+
 }
 
 .contenedor .wid2 {
     grid-area: wid2;
+    border: solid rgb(51, 153, 255) 1px;
+    border-radius: 10px;
+    height: 50%;
+
+
 }
 
 .contenedor .pie {
      background: #12203E;    
     grid-area: pie;
+}
+.contenedor .widgets{
+    grid-area: widgets;
 }
 
 @media screen and (min-width: 769px) and (max-width: 1424px) {
@@ -94,9 +107,10 @@
             "header    header  header"
             "contenido contenido slidebar"
             "contenido contenido slidebar"
-            "wid1      wid2      slidebar"
-            "wid1      wid2      slidebar"
-            "wid1      wid2      slidebar"
+            "widgets   widgets      slidebar"
+            "widgets   widgets      slidebar"
+            "widgets   widgets     slidebar"
+
             "pie       pie       pie";
     }
 }

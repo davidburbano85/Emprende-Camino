@@ -25,7 +25,7 @@ export class InicioComponent {
     //y le damos ese valor a las variables creadas arriba
    recibirCambio(recibidoHeader:boolean){
     this.recibirTrue=recibidoHeader
-    console.log('Valor de enviarTue recibido:', recibidoHeader)
+    // console.log('Valor de enviarTue recibido:', recibidoHeader)
    }
    recibePedido(pedidoRecibido:boolean){
     this.pedido=pedidoRecibido
@@ -34,5 +34,5 @@ export class InicioComponent {
     this.contacto=contactoRecibido
    }
 
-    
+
 }

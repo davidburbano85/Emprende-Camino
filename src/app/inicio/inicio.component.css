@@ -1,0 +1,15 @@
+.widgets{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    border: solid  rb(51, 153, 255)g 1px;
+    width: 100%;
+    background-image: url("C:/Users/ASUS/Documents/a EmprendeCamino/emprendimiento/src/assets/logoOscu.png") ;
+     opacity: 0.8;
+    /* background-size: cover; */ 
+    background-position: center ;
+}
+.widgets :hover{
+    box-shadow: 0 0 10px rgb(51, 153, 255), 0 0 40px rgb(51, 153, 255), 0 0 80px rgb(51, 153, 255);
+}

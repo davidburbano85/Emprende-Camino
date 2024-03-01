@@ -1,11 +1,11 @@
 <div class="relleno">
     <div class="contenedor">
         <header class="header">
-           <!-- aqui recibimos la informacion mandada desde el hijo header
+            <!-- aqui recibimos la informacion mandada desde el hijo header
                  -->
-            <app-header (enviarTrabajo)="recibirCambio($event)" 
-                        (enviarPedido)="recibePedido($event)"
-                        (enviarContact)="recibeContacto($event)" ></app-header>
+            <app-header (enviarTrabajo)="recibirCambio($event)" (enviarPedido)="recibePedido($event)"
+                (enviarContact)="recibeContacto($event)">
+            </app-header>
             <!-- <app-header (enviarPedido)="recibePedido($event)"></app-header>
             <app-header (enviarContact)="recibeContacto($event)"></app-header> 
              -->
@@ -15,16 +15,17 @@
             <!-- aqui miramos que variable es
             verdadera y segun eso activamos 
             el componente renderizamos(que se vea en la pantalla) -->
-                @if (recibirTrue) {                    
-                    <app-trabaja/>
-                }@else if (pedido) {
-                    <app-pedidos></app-pedidos>
-                }@else if (contacto) {
-                    <app-contactos></app-contactos>
-                }@else {
-                    <app-contenido/>
-                }
-            
+
+            @if (recibirTrue) {
+            <app-trabaja />
+            }@else if (pedido) {
+            <app-pedidos></app-pedidos>
+            }@else if (contacto) {
+            <app-contactos></app-contactos>
+            }@else {
+            <app-contenido />
+            }
+
 
 
 
@@ -33,16 +34,17 @@
         <div class="slidebar">
             <app-slidebar />
         </div>
-        <div class="wid1">
-            <app-widget />
+        <div class="widgets">
+            <div class="wid1">
+                <app-widget />
+            </div>
+            <div class="wid2">
+                <app-widget2 />
+            </div>
         </div>
-        <div class="wid2">
-            <app-widget2 />
-        </div>
-
         <footer class="pie">
             <app-pie />
         </footer>
     </div>
-   
+
 </div>

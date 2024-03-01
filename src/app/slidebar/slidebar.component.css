@@ -1,3 +1,10 @@
-*{
+/* *{
     background-color: transparent;    
+    
+} */
+
+.carru{
+    border: solid rgb(51, 153, 255) 1px;
+    height: 100%;
+    width: 100%;
 }
