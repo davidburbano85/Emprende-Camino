@@ -15,13 +15,15 @@
             <!-- aqui miramos que variable es
             verdadera y segun eso activamos 
             el componente renderizamos(que se vea en la pantalla) -->
-
-            @if (recibirTrue) {
-            <app-trabaja />
+                
+            @if (contacto) {
+            <app-contactos/>
+            
             }@else if (pedido) {
             <app-pedidos></app-pedidos>
-            }@else if (contacto) {
-            <app-contactos></app-contactos>
+            }@else if (recibirTrue ) {
+            <app-trabaja />
+
             }@else {
             <app-contenido />
             }

@@ -2,7 +2,18 @@
     background-color: transparent;    
     
 } */
-
+img{
+    opacity: 0.5;
+}
+.logo{
+  top: 0;
+  margin: 0%;
+  left: 0;
+  width: 100%; /* Ajusta el ancho según tu logotipo */
+  height: 20%; /* Ajusta la altura según tu logotipo */
+  background-color: #ffffff; /* Color de fondo del logotipo */
+  /* z-index: 1000;  */
+}
 .carru{
     border: solid rgb(51, 153, 255) 1px;
     height: 100%;

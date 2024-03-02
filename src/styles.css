@@ -7,24 +7,7 @@
     color: RGB(18, 32, 62);
     background-color: antiquewhite;
 }
-.contenedor {   
-    width: 100%;
-    max-width: 100%;   
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, auto);
-    /* Ajusta la altura de las filas en toda la página */
-    grid-template-areas:
-        "header    header  header"
-        "header    header  header"
-        "contenido contenido slidebar"
-        "contenido contenido slidebar"
-        "widgets   widgets      slidebar"
-        "widgets   widgets      slidebar"
-        "widgets   widgets      slidebar"
-        "pie       pie       pie";
-}
+
 
 .contenedor>div,
 .contenedor .header,
@@ -33,31 +16,31 @@
 .contenedor .pie {
     padding: 0px;
     border: solid  rgb(51, 153, 255);
-
+    align-items: flex-start;
     border-radius: 10px;
 }
 
-.contenedor .header {
-   
+.contenedor .header {   
     color: #fff;
-
     grid-area: header;
 }
 
 .contenedor .contenido {
+    align-items: flex-start;
+    height: 75vh;
     grid-area: contenido;
     opacity: 0.9;
     font-size: larger;
-    box-shadow: 0 0 10px rgb(51, 153, 255), 0 0 20px rgb(51, 153, 255), 0 0 30px rgb(51, 153, 255);
+    box-shadow: 0 0 10px rgb(112, 128, 144), 0 0 20px rgb(112, 128, 144), 0 0 30px rgb(112, 128, 144);
 
 }
 
 .contenedor .slidebar {
     
-    grid-column: 3/4;
+    /* grid-column: 3/4; */
     text-align: center;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     min-height: 400px;
     grid-area: slidebar;
@@ -68,24 +51,23 @@
     width: 100%;  
     text-align: center;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    background-color: transparent;
 }
 
 .contenedor .wid1 {
     grid-area: wid1;
-    border: solid rgb(51, 153, 255) 1px;
+    border: solid #12203E 1px;
     border-radius: 10px;
-    height: 50%;
-
-
+    height: 42%;
 }
 
 .contenedor .wid2 {
     grid-area: wid2;
-    border: solid rgb(51, 153, 255) 1px;
+    border: solid #12203E 1px;
     border-radius: 10px;
-    height: 50%;
+    height: 42%;
 
 
 }
@@ -96,7 +78,28 @@
 }
 .contenedor .widgets{
     grid-area: widgets;
+ 
+
 }
+
+.contenedor {   
+    width: 100%;
+    max-width: 100%;   
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+    /* Ajusta la altura de las filas en toda la página */
+    grid-template-areas:
+        "header    header  header"
+        "contenido contenido slidebar"
+        "contenido contenido slidebar"
+        "widgets   widgets      slidebar"
+        "widgets   widgets      slidebar"
+        "widgets   widgets      slidebar"
+        "pie       pie       pie";
+}
+
 
 @media screen and (min-width: 769px) and (max-width: 1424px) {
     .contenedor {        
@@ -107,6 +110,8 @@
             "header    header  header"
             "contenido contenido slidebar"
             "contenido contenido slidebar"
+            "contenido contenido slidebar"
+
             "widgets   widgets      slidebar"
             "widgets   widgets      slidebar"
             "widgets   widgets     slidebar"
@@ -126,8 +131,8 @@
             "contenido  "
             "slidebar     "
             "slidebar     "
-            "wid1            "
-            "wid2            "
+            "widgets            "
+            "widgets         "
             "pie           ";
     }
 }
