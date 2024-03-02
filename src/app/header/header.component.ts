@@ -16,6 +16,7 @@ export class HeaderComponent {
   enviarPedidos = false
   enviarTrabaja = false
   enviarContacto = false
+  servicioActivo = true//esta desactiva el servicio del navbar para obligar a dar click a inicio
 
 
   /** esto es lo que se envia en las funciones 
@@ -24,29 +25,32 @@ export class HeaderComponent {
      ejemplo 
   */
   @Output() enviarTrabajo = new EventEmitter()
-  @Output() enviarPedido= new EventEmitter()
-  @Output() enviarContact= new EventEmitter()
+  @Output() enviarPedido = new EventEmitter()
+  @Output() enviarContact = new EventEmitter()
 
   cambiarvalor() {
     this.enviarTrabaja = true
-    // this.enviarPedidos = false
-    // this.enviarContacto = false
+    //cuando se da clic en uno de estos link inmediatamente  se desactiva 
+    //el servicio
+    this.servicioActivo = false
     this.enviarTrabajo.emit(this.enviarTrabaja)//esto es lo que se envia al padre
   }
 
-  Pedido(){
+  Pedido() {
     this.enviarPedidos = true
-    // this.enviarTrabaja = false
-    // this.enviarContacto = false
+    //cuando se da clic en uno de estos link inmediatamente  se desactiva 
+    //el servicio
+    this.servicioActivo = false
     this.enviarPedido.emit(this.enviarPedidos)
-    }
-  
-    contacto(){
-      this.enviarContacto= true
-      // this.enviarPedidos = false
-      // this.enviarTrabaja = false
 
-      this.enviarContact.emit(this.enviarContacto)
-    }
+  }
+
+  contacto() {
+    this.enviarContacto = true
+    //cuando se da clic en uno de estos link inmediatamente  se desactiva 
+    //el servicio
+    this.servicioActivo = false
+    this.enviarContact.emit(this.enviarContacto)
+  }
 
 }

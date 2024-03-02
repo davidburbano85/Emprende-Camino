@@ -1,16 +1,36 @@
 .widgets{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: 115vh;
-    border: solid  rgb(51, 153, 255)g 1px;
+    border: solid  rgb(51, 153, 255) 1px;
     border-radius: 15px;
     width: 100%;
     background-image: url("C:/Users/ASUS/Documents/a EmprendeCamino/emprendimiento/src/assets/logoOscu.png") ;
-     opacity: 0.7;
+     /* opacity: 0.7; */
     /* background-size: cover; */ 
     background-position: center ;
     box-shadow: 0 0 10px rgb(112, 128, 144), 0 0 30px rgb(112, 128, 144), 0 0 50px rgb(112, 128, 144);
 
 
 }
+.contactanosBtn{
+    height: 80%;
+    width: 7vh;
+    background-color:#12203E ;
+    color: aliceblue;
+    font-size: 26.5px;
+    /* box-shadow: 0 0 10px rgb(112, 128, 144), 0 0 30px rgb(112, 128, 144), 0 0 50px rgb(112, 128, 144); */
+    border-radius: 10px;
+
+}
+
+.contactanosBtn:hover{
+    background-color: aquamarine;
+    box-shadow: 0 0 10px rgb(51, 153, 255), 0 0 30px rgb(51, 153, 255), 0 0 50px rgb(51, 153, 255);
+    color:  #12203E ;
+    font-size: 28px;
+}
+
+
+

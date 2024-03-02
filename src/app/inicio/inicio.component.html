@@ -15,10 +15,9 @@
             <!-- aqui miramos que variable es
             verdadera y segun eso activamos 
             el componente renderizamos(que se vea en la pantalla) -->
-                
+
             @if (contacto) {
-            <app-contactos/>
-            
+            <app-contactos />
             }@else if (pedido) {
             <app-pedidos></app-pedidos>
             }@else if (recibirTrue ) {
@@ -27,11 +26,6 @@
             }@else {
             <app-contenido />
             }
-
-
-
-
-
         </div>
         <div class="slidebar">
             <app-slidebar />
@@ -42,6 +36,22 @@
             </div>
             <div class="wid2">
                 <app-widget2 />
+            </div>
+            <div class="">
+                <!-- se crea el boton y hace dos eventos un click abre 
+                    contactos y onclick sube al comienzo de la pagina -->
+                <button  class=" contactanosBtn scroll-to-top" (click)="contacto=true" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+                     C<br>
+                     o <br>
+                     n <br>
+                     t <br> 
+                     a <br>
+                     c <br> 
+                     t <br> 
+                     a <br> 
+                     n <br> 
+                     o <br> 
+                     s <br> </button>
             </div>
         </div>
         <footer class="pie">

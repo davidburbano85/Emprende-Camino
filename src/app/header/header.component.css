@@ -2,3 +2,9 @@
     background-color: transparent;
 }
 
+.servicio{
+    display: block;
+}
+.servicio.desactivado{
+    display: none;
+}

@@ -12,22 +12,33 @@
           <!-- <button class="nav-link text-white fs-5 " aria-current="page" href="#"  >Home</button> -->
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white fs-5" href="" >Inicio</a>
+          <a class="nav-link text-white fs-5" href="">Inicio</a>
         </li>
-        <li class="nav-item dropdown ">
-          <a class="nav-link dropdown-toggle text-white fs-5 " href="#" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            Servicios
-          </a>
-          <ul class="dropdown-menu bg-primary text-white ">
-            <li><a class="dropdown-item text-white" (click)="Pedido()">Tus peticiones</a></li>
-            <li><a class="dropdown-item text-white" (click)="contacto()">contacto</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item text-white" (click)="cambiarvalor()">trabaja con nosotros</a></li>
-          </ul>
-        </li>
+        <!-- en esta parte se crean dos clases y en el css aparecen 
+        sus configuraciones aqui es para esconder el servicio revisar css.header -->
+        <div class=" servicio" [class.desactivado]="!servicioActivo">
+
+          <li class="nav-item dropdown ">
+
+
+            <a class="nav-link dropdown-toggle text-white fs-5  " href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Servicios
+            </a>
+            <ul class="dropdown-menu bg-primary text-white ">
+              <li><a class="dropdown-item text-white" (click)="Pedido()">Tus peticiones</a></li>
+              <li><a class="dropdown-item text-white" (click)="contacto()">contacto</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item text-white" (click)="cambiarvalor()">trabaja con nosotros</a></li>
+            </ul>
+          </li>
+        </div>
+
+
+
+
         <li class="nav-item">
           <a class="nav-link disabled text-white fs-8" aria-disabled="true">Disabled</a>
         </li>
@@ -39,6 +50,3 @@
     </div>
   </div>
 </nav>
-
-
-

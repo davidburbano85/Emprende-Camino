@@ -6,12 +6,12 @@
     background-image: url("C:/Users/ASUS/Documents/a EmprendeCamino/emprendimiento/src/assets/manos.jpg") ;
     border-radius: 20px;
     /* padding: 15px;  */
-    opacity: 0.8;
+    /* opacity: 0.8; */
 }
 
 .der,
 .izq {
-    
+    height: 100%;
     width: 50%;
     border: solid rgb(51, 153, 255);
     border-radius: 10px;
