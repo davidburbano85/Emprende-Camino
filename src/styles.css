@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     color: RGB(18, 32, 62);
-    background-color: antiquewhite;
+    background-color: rgb(242, 243, 249);
 }
 
 
@@ -23,11 +23,13 @@
 .contenedor .header {   
     color: #fff;
     grid-area: header;
+    box-shadow: 0 0 10px rgb(112, 128, 144), 0 0 20px rgb(112, 128, 144), 0 0 30px rgb(112, 128, 144);
+
 }
 
 .contenedor .contenido {
     align-items: flex-start;
-    height: 75vh;
+    height: 90vh;
     grid-area: contenido;
     /* opacity: 0.9; */
     font-size: larger;
@@ -44,6 +46,8 @@
     justify-content: center;
     min-height: 400px;
     grid-area: slidebar;
+    box-shadow: 0 0 10px rgb(112, 128, 144), 0 0 20px rgb(112, 128, 144), 0 0 30px rgb(112, 128, 144);
+
 }
 
 .contenedor .wid1,
@@ -112,6 +116,8 @@
             "contenido contenido slidebar"
             "contenido contenido slidebar"
             "contenido contenido slidebar"
+            "contenido contenido slidebar"
+
 
             "widgets   widgets      slidebar"
             "widgets   widgets      slidebar"
