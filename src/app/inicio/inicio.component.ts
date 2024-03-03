@@ -33,6 +33,4 @@ export class InicioComponent {
    recibeContacto(contactoRecibido:boolean){
     this.contacto=contactoRecibido
    }
-
-
 }

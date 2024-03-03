@@ -1,14 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
-
-
 * {
     margin: 0;
     padding: 0;
     color: RGB(18, 32, 62);
     background-color: rgb(242, 243, 249);
 }
-
-
 .contenedor>div,
 .contenedor .header,
 .contenedor .contenido,
@@ -19,27 +14,20 @@
     align-items: flex-start;
     border-radius: 10px;
 }
-
 .contenedor .header {   
     color: #fff;
     grid-area: header;
     box-shadow: 0 0 10px rgb(112, 128, 144), 0 0 20px rgb(112, 128, 144), 0 0 30px rgb(112, 128, 144);
-
 }
 
 .contenedor .contenido {
     align-items: flex-start;
     height: 90vh;
     grid-area: contenido;
-    /* opacity: 0.9; */
     font-size: larger;
     box-shadow: 0 0 10px rgb(112, 128, 144), 0 0 20px rgb(112, 128, 144), 0 0 30px rgb(112, 128, 144);
-
 }
-
 .contenedor .slidebar {
-    
-    /* grid-column: 3/4; */
     text-align: center;
     display: flex;
     align-items: flex-start;
@@ -47,9 +35,7 @@
     min-height: 400px;
     grid-area: slidebar;
     box-shadow: 0 0 10px rgb(112, 128, 144), 0 0 20px rgb(112, 128, 144), 0 0 30px rgb(112, 128, 144);
-
 }
-
 .contenedor .wid1,
 .contenedor .wid2 {  
     width: 100%;  
@@ -59,23 +45,18 @@
     justify-content: center;
     background-color: transparent;
 }
-
 .contenedor .wid1 {
     grid-area: wid1;
     border: solid #12203E 1px;
     border-radius: 10px;
     height: 42%;
 }
-
 .contenedor .wid2 {
     grid-area: wid2;
     border: solid #12203E 1px;
     border-radius: 10px;
     height: 42%;
-
-
 }
-
 .contenedor .pie {
      background: #12203E;    
     grid-area: pie;
@@ -83,10 +64,7 @@
 .contenedor .widgets{
     align-items: flex-start;
     grid-area: widgets;
- 
-
 }
-
 .contenedor {   
     width: 100%;
     max-width: 100%;   
@@ -104,35 +82,27 @@
         "widgets   widgets      slidebar"
         "pie       pie       pie";
 }
-
-
 @media screen and (min-width: 769px) and (max-width: 1424px) {
     .contenedor {        
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, auto);
-        /* Ajusta la altura de las filas en toda la página */
         grid-template-areas: 
             "header    header  header"
             "contenido contenido slidebar"
             "contenido contenido slidebar"
             "contenido contenido slidebar"
             "contenido contenido slidebar"
-
-
             "widgets   widgets      slidebar"
             "widgets   widgets      slidebar"
             "widgets   widgets     slidebar"
-
             "pie       pie       pie";
     }
 }
-
 /* Media query solo para ajustar la altura en pantallas más pequeñas */
 @media screen and (min-width: 320px) and (max-width: 769px){
     .contenedor {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(5, auto);
-        /* Ajusta la altura de las filas en toda la página */
         grid-template-areas:
             "header     "
             "contenido  "

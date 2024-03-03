@@ -6,11 +6,8 @@
     border: solid  rgb(51, 153, 255) 1px;
     border-radius: 15px;
     width: 100%;
-    background-image: url("C:/Users/ASUS/Documents/a EmprendeCamino/emprendimiento/src/assets/logoOscu.png") ;
-     /* opacity: 0.7; */
-    /* background-size: cover; */ 
+    background-image: url("C:/Users/ASUS/Documents/a EmprendeCamino/emprendimiento/src/assets/logoOScu.png") ;
     background-position: center ;
-    /* box-shadow: 0 0 10px rgb(112, 128, 144), 0 0 30px rgb(112, 128, 144), 0 0 50px rgb(112, 128, 144); */
 
 
 }
@@ -22,9 +19,7 @@
     font-size: 26.5px;
      box-shadow: 0 0 10px rgb(76, 165, 254), 0 0 30px rgb(112, 128, 144), 0 0 50px rgb(112, 128, 144); 
     border-radius: 10px;
-
 }
-
 .contactanosBtn:hover{
     background-color: rgb(205, 212, 255);
     box-shadow: 0 0 10px #12203E, 0 0 30px #12203E, 0 0 50px #12203E;

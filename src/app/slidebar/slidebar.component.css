@@ -13,9 +13,11 @@ img{
   height: 20%; /* Ajusta la altura según tu logotipo */
   background-color: #ffffff; /* Color de fondo del logotipo */
   /* z-index: 1000;  */
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgb(51, 153, 255), 0 0 40px rgb(51, 153, 255), 0 0 70px rgb(51, 153, 255), 0 0 80px rgb(51, 153, 255), 0 0 100px rgb(51, 153, 255), 0 0 150px rgb(51, 153, 255);
 }
 .carru{
     border: solid rgb(51, 153, 255) 1px;
     height: 100%;
     width: 100%;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgb(51, 153, 255), 0 0 40px rgb(51, 153, 255), 0 0 70px rgb(51, 153, 255), 0 0 80px rgb(51, 153, 255), 0 0 100px rgb(51, 153, 255), 0 0 150px rgb(51, 153, 255);
 }
